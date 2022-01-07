@@ -13,10 +13,10 @@ async function main() {
     let tx = await myNftContract.makeNFT()
     await tx.wait()
     console.log('tx hash:', tx.hash)
-    // // mint again
-    // tx = await myNftContract.makeNFT()
-    // await tx.wait()
-    // console.log('tx hash:', tx.hash)
+    // mint again
+    tx = await myNftContract.makeNFT()
+    await tx.wait()
+    console.log('tx hash:', tx.hash)
 
 }
 
